@@ -1,0 +1,157 @@
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#warp {
+  margin: 0 auto;
+}
+#header {
+  margin-bottom: 30px;
+}
+
+#header {
+  height: 80px;
+  background-color: rgb(33, 28, 28);
+  width: 100%;
+  border: solid 2px #000;
+}
+.inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#header h1 {
+  float: left;
+  padding-top: 12px;
+  padding-right: 40px;
+  position: relative;
+}
+#header h1 a {
+  display: block;
+  width: 133px;
+  height: 53px;
+  background-image: url(../img/63f8a97f7d15573f2b565d37ae873940fbe9ccf7_s1_n2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#gnb ul > .bb a {
+  color: #f4cd00;
+  border-bottom: 3px solid #f4cd00;
+}
+span.text {
+  position: absolute;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  left: 52px;
+  top: 23px;
+}
+
+#gnb nav ul li {
+  float: left;
+  margin-left: 45px;
+}
+
+#gnb nav ul li a {
+  display: block;
+  line-height: 80px;
+  font-size: 16px;
+  padding: 0 45px;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#header .right_m {
+  float: left;
+  margin: 0 100px;
+  padding-top: 25px;
+}
+#header .right_m a {
+  display: inline-block;
+
+  vertical-align: middle;
+  padding-right: 10px;
+  font-size: 12px;
+  color: #f4cd00;
+  line-height: 1;
+  text-decoration: none;
+  font-weight: bold;
+  flex-wrap: nowrap;
+}
+/* 헤더끝 ///////////////////////////////////////////////////////*/
+.sub_mains {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.board-view {
+  padding-right: 140px;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #e4e9f2;
+}
+.board-view .headd .h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #212121;
+  line-height: 1.2;
+}
+.hit-common {
+  font-size: 12px;
+  color: #718096;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.hit-common span + span:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 2px;
+  height: 2px;
+  background: #b7c2d8;
+  margin: -3px 5px 0 4px;
+}
+.mid {
+  padding: 20px 0 60px;
+  font-size: 16px;
+  color: #454545;
+  line-height: 1.5;
+  border-bottom: 3px solid #e4e9f2;
+  margin-bottom: 30px;
+}
+.mid img {
+  max-width: 100%;
+}
+
+.btn-board-list:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url(../img/mokrok.png) no-repeat 0 0;
+  margin: -3px 5px 0 0;
+}
+.btn-board-list {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #e4e9f2;
+  height: 42px;
+  line-height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #000;
+  padding: 0 18px;
+  text-decoration: none;
+}
+.btn-board-list a {
+  text-decoration: none;
+}
+.mokrok {
+  text-align: right !important;
+}

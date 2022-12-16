@@ -1,0 +1,70 @@
+
+    <div class="members">
+      <div class="list-tabss"><a class="active" href="">회원가입</a></div>
+      <div class="list-contt">
+        <div class="contt">
+          <form id="joinForm" action="/writeJoin" method="post"  onsubmit="return Validation();">
+            <h3 class="h3-member avb ">생년월일</h3>
+            <div class="mb30">
+              <input
+                class="inp-member"
+                id="birt"
+                type="text"
+                name="birth"
+                placeholder="주민번호 9자리"
+              />
+              <h3 class="h3-member">이름</h3>
+              <div class="mb30">
+                <input
+                  class="inp-member"
+                  id="namin"
+                  type="text"
+                  name="names"
+                  placeholder="이름을입력하세요"
+                />
+                <h3 class="h3-member">메일</h3>
+                <div class="mb30">
+                  <input
+                    class="inp-member"
+                    id="mail"
+                    type="text"
+                    name="mail"
+                    placeholder="메일을입력하세요"
+                  />
+                  <h3 class="h3-member">아이디</h3>
+                  <div class="mb30">
+                    <input
+                      class="inp-member"
+                      id="ids"
+                      type="text"
+                      name="ids"
+                      placeholder="아이디을입력하세요"
+                    />
+                    <div class="checksd">영문 또는 영문, 숫자 조합 (8~12자)</div>
+                    <h3 class="h3-member">비밀번호</h3>
+                    <div class="mb1">
+                      <input
+                        class="inp-member"
+                        id="pw"
+                        type="password"
+                        name="pws"
+                        placeholder="비밀번호을입력하세요"
+                      />
+                      <div class="checksd">비밀번호는 영문, 숫자, 특수문자 중 2가지 이상 조합하여 8-16자리로 설정해주세요.</div>
+                      <h3 class="h3-member">비밀번호 확인</h3>
+                      <div class="mb1">
+                        <input
+                          class="inp-member"
+                          id="repw"
+                          type="password"
+                          name="repws"
+                          placeholder="비밀번호를 확인해주세요"
+                        />
+                        <input  class="btn_type0" type="submit" value="완료"/ >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ 
+<script src="js/join.js"></script>

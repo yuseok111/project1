@@ -1,0 +1,70 @@
+<div class="member">
+  <div class="list-tabss">
+    <a class="active" href=""> 회원 로그인 </a>
+    <a href="">비회원 예매 및 확인</a>
+  </div>
+  <div class="tabs-cont">
+    <div class="cont">
+      <form id="loginForm" method="post" name="form1" action="/writeLogin">
+        <input type="hidden" id="username" name="cgid" value="" />
+        <h3 class="h3-memberss">아이디</h3>
+        <div class="mb30">
+          <input
+            type="text"
+            id="named"
+            name="named"
+            value=""
+            class="inp-member"
+          />
+        </div>
+        <h3 class="h3-memberss">비밀번호</h3>
+        <div class="mb30">
+          <input
+            type="password"
+            id="passwordd"
+            name="passwordd"
+            class="inp-member"
+          />
+        </div>
+        <div class="logi">
+          <label>
+            <input type="checkbox" id="saveId" class="checkbox" />
+            <em></em>
+            <span>아이디저장</span>
+          </label>
+        </div>
+        <button type="submit" class="btn-type0" >
+          로그인
+        </button>
+      </form>
+      <div class="find">
+        <a href="">아이디/비밀번호찾기</a>
+        <a href="onclick="location.href='join'">회원가입</a>
+      </div>
+      <div class="orther-login">
+        <p class="tit">
+          <span>
+            <strong>간편로그인</strong>
+          </span>
+        </p>
+        <div class="sns">
+          <a href="#">
+            <img src="./img/kakao.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./img/naver.com.png" alt="" />
+          </a>
+        </div>
+        <div class="desc">
+          쁘띠시네마 사이트에 간편로그인 계정을 연결한 경우에만
+          간편로그인가능합니다
+          <br />
+          계정연결은 로그인후
+          <span>마이페이지 > 개인정보수정</span>
+          에서 진행해주세요
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/login.js"></script>

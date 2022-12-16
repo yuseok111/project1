@@ -1,0 +1,26 @@
+<div class="product_write_wrap">
+  <p>새로운 영화</p>
+  <div class="product_write">
+    <form method="post" action="/movie_write" enctype="multipart/form-data">
+      <div class="product_write_list">
+        <ul>
+          <li>
+            <label for="thumpro_img">영화이미지</label>
+            <input type="file" name="thumpro_img" id="thumpro_img" />
+          </li>
+          <li>
+            <label for="thumpro_name">영화명</label>
+            <input type="text" name="thumpro_name" id="thumpro_name" />
+          </li>
+          <li>
+            <label for="thumpro_tag">예매율</label>
+            <input type="text" name="thumpro_tag" id="thumpro_tag" />
+          </li>
+        </ul>
+      </div>
+      <div class="product_write_btn">
+        <input type="submit" value="확인" />
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<form class="formss" method="post" action="/writeMemo">
+  <table
+    class="tables"
+    style="padding-top: 50px"
+    align="center"
+    width="700"
+    border="0"
+    cellpadding="2"
+  >
+    <tr class="trs">
+      <td height="20" align="center" bgcolor="#ccc">
+        <font color="white"> 관리자 게시판 작성</font>
+      </td>
+    </tr>
+    <tr class="trs">
+      <td bgcolor="white">
+        <table class="table2">
+          <tr class="trs">
+            <td class="tdd">작성자</td>
+            <td><input type="text" name="name" id="name" size="20" /></td>
+          </tr>
+
+          <tr class="trs">
+            <td class="tdd">제목</td>
+            <td><input type="text" name="title" id="title" size="60" /></td>
+          </tr>
+
+          <tr class="trs">
+            <td class="tdds">내용</td>
+            <td>
+              <textarea
+                name="content"
+                id="content"
+                cols="85"
+                rows="15"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr class="trs">
+            <td class="tdd">비밀번호</td>
+            <td>
+              <input type="password" name="pw" size="10" maxlength="10" />
+            </td>
+          </tr>
+        </table>
+
+        <center>
+          <input
+            type="submit"
+            value="작성"
+            onclick="javascript:location.href='/Notice' "
+          />
+        </center>
+      </td>
+    </tr>
+  </table>
+</form>

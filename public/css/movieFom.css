@@ -1,0 +1,167 @@
+.inners {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.tab1 {
+  position: relative;
+}
+.tab1 > a {
+  font-weight: 700;
+  color: #000;
+}
+.tab1 a.actives:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 3px;
+  background: #f4cd00;
+}
+.tab1 a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 30px;
+  position: relative;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #000;
+}
+/* ////영화명 서치박스, */
+.tab1 .seach_box {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  width: 225px;
+}
+.tab1 .seach_box .inp-mv {
+  width: 100%;
+  height: 38px;
+  border-radius: 38px;
+  background: #f5f9fc;
+  font-size: 13px;
+  color: #000;
+  border: 0;
+  outline: none;
+  padding: 0 0px 0 16px;
+}
+
+.tab1 .seach_box .btn-srch {
+  position: absolute;
+  right: 11px;
+  top: 0;
+  bottom: 0;
+  background: url(../img/no.shrc.png) no-repeat 50% 50%;
+  width: 24px;
+  text-indent: -9999px;
+}
+button {
+  border: 0;
+  outline: none;
+  background: none;
+  text-align: left;
+}
+.sorting {
+  text-align: right;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.sorting .actived {
+  font-weight: 600;
+  color: #000;
+}
+.sorting a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #909090;
+  line-height: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.sorting a + a {
+  padding-left: 12px;
+  margin-left: 10px;
+  position: relative;
+}
+.sorting a + a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 16px;
+  margin-top: -8px;
+  width: 1px;
+  background: #bdbdbd;
+}
+/* ////////////////////썸네일 헤더 끝ㄴ */
+
+.imglist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.items {
+  width: 18%;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.imgs {
+  position: relative;
+  width: 100%;
+}
+.imgs > img {
+  width: 100%;
+  height: 268px;
+  border-radius: 7px;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 26%);
+}
+.infos {
+  margin-top: 20px;
+}
+.subjs {
+  display: block;
+  width: 200px;
+  font-size: 21px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.rates > span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #000;
+}
+.rates > strong {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f4cd00;
+}
+.movie_infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie_infos .a1 {
+  text-decoration: none;
+  color: #718096;
+  font-weight: 600;
+  font-size: 14px;
+}
+.movie_infos .a2 {
+  text-decoration: none;
+  color: #f4cd00;
+  font-weight: 600;
+  padding-right: 20px;
+  background: url(../img/info_ar.png) no-repeat 100% 60%;
+}

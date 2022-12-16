@@ -1,0 +1,520 @@
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#warp {
+  margin: 0 auto;
+}
+#header {
+  margin-bottom: 30px;
+}
+
+#header {
+  height: 80px;
+  background-color: rgb(33, 28, 28);
+  width: 100%;
+  border: solid 2px #000;
+}
+.inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#header h1 {
+  float: left;
+  padding-top: 12px;
+  padding-right: 40px;
+  position: relative;
+}
+#header h1 a {
+  display: block;
+  width: 133px;
+  height: 53px;
+  background-image: url(../img/63f8a97f7d15573f2b565d37ae873940fbe9ccf7_s1_n2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+span.text {
+  position: absolute;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  left: 52px;
+  top: 23px;
+}
+
+#gnb nav ul li {
+  float: left;
+  margin-left: 45px;
+}
+
+#gnb nav ul li a {
+  display: block;
+  line-height: 80px;
+  font-size: 16px;
+  padding: 0 45px;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#header .right_m {
+  float: left;
+  margin: 0 100px;
+  padding-top: 25px;
+}
+#header .right_m a {
+  display: inline-block;
+
+  vertical-align: middle;
+  padding-right: 10px;
+  font-size: 12px;
+  color: #f4cd00;
+  line-height: 1;
+  text-decoration: none;
+  font-weight: bold;
+  flex-wrap: nowrap;
+}
+
+/* ? ////////////////////////////////////////////// 헤더끝 */
+
+/* //swiper */ ///////////////
+.main {
+  position: relative;
+}
+.silde {
+  margin: 0 auto;
+  width: 100%; /* width값 필요함 */
+}
+.swiper-wrapper {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.swiper {
+  height: 384px;
+  width: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 1250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 1225px;
+}
+
+/* //swiper */
+
+/* main start */
+
+/* body {
+  display: block;
+  background-image: url(../img/backgr.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 30%;
+  margin-bottom: -3px;
+} */
+
+/* ////////////////////* 스와이프 버튼 컨트롤러 */
+.contorl {
+  width: 100%;
+}
+
+.contorl > ul {
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+  justify-content: center;
+}
+li.swiper-button-prev {
+  background-image: url(../img/right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -14.5px;
+  left: 41%;
+  transform: translate(-10%, 100%);
+  z-index: 99;
+}
+li.swiper-button-next {
+  background-image: url(../img/right.png);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  transform: scaleX(-1) translate(50%, 42%);
+  z-index: 9999;
+}
+li.swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+  display: inline;
+  width: 100px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -23px;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.btn {
+  background-image: url(../img/STOP.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+}
+
+li.swiper-paginationTo.swiper-pagination-progressbar.swiper-pagination-horizontal {
+  width: 10%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+html:root {
+  --swiper-theme-color: #f4cd00;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev::after {
+  display: none;
+}
+/* /////////////////////////// 스와이프 버튼컨트롤러 끝 */
+/* 공용 나이제한  영화순위 스팬 */
+.img {
+  position: relative;
+}
+.target {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.age12 {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/age_12.png) no-repeat 0 0;
+  width: 24px;
+  height: 24px;
+}
+.age15 {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/age_15.png) no-repeat 0 0;
+  width: 24px;
+  height: 24px;
+}
+.rank {
+  position: absolute;
+  left: 160px;
+  top: -5px;
+}
+.rank1::before {
+  content: "1";
+}
+.rank2::before {
+  content: "2";
+}
+.rank3::before {
+  content: "3";
+}
+.rank4::before {
+  content: "4";
+}
+.rank5::before {
+  content: "5";
+}
+.rank6::before {
+  content: "6";
+}
+.rank7::before {
+  content: "7";
+}
+.rank8::before {
+  content: "8";
+}
+.rank9::before {
+  content: "9";
+}
+.rank10::before {
+  content: "10";
+  position: absolute;
+  left: -15px;
+  top: 1px;
+}
+
+.rank::before {
+  display: inline;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 3px 3px 8px rgb(0 0 0 / 70%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/* // //////////////////////////메인 섹션 두번쨰 */
+.main_two {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+/* 제목 */
+.h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 80px;
+  position: relative;
+  color: #f4cd00;
+}
+.plus_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: url(../img/croos.png) no-repeat 50% 50%;
+  text-indent: -9999px;
+  transition: all 0.5s ease;
+}
+/* 메인2 일반영화 탑텐///////////////////////////////// */
+.TOP_10 {
+  overflow: hidden;
+}
+.swiper_two {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.main_bar_contorl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar img {
+  width: 192px;
+  height: 268px;
+  border-radius: 7px;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 26%);
+}
+.swiper_button_next {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/bar_arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  z-index: 999;
+}
+.swiper_button_prev {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/bar_arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  transform: scaleX(-1);
+  top: 50%;
+  left: -5%;
+  z-index: 999;
+}
+
+.bar {
+  flex-wrap: wrap;
+}
+.info {
+  margin-top: 20px;
+}
+.subj {
+  display: block;
+  width: 200px;
+  font-size: 21px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+  text-decoration: none;
+  color: #f4cd00;
+  font-weight: bold;
+}
+
+.rate > span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #000;
+}
+.rate > strong {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f4cd00;
+}
+.movie_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie_info .a1 {
+  text-decoration: none;
+  color: #718096;
+  font-weight: 600;
+  font-size: 14px;
+}
+.movie_info .a2 {
+  text-decoration: none;
+  color: #f4cd00;
+  font-weight: 600;
+  padding-right: 20px;
+  background: url(../img/info_ar.png) no-repeat 100% 60%;
+}
+.movie_info .a2::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #f4cd00;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.a2:hover:after {
+  transform: scaleX(1);
+}
+/* //////////////////////////메인2 끝
+
+////////////////////////////////메인3 시작 */
+.main_thr {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+.TOP_10_two {
+  overflow: hidden;
+}
+.swiper_thr {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.swiper-button-nextd {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/bar_arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  z-index: 999;
+}
+
+.swiper-button-prevd {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/bar_arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  transform: scaleX(-1);
+  top: 50%;
+  left: -5%;
+  z-index: 999;
+}
+
+/* ///// 푸터 */
+#footers {
+  background-color: #000;
+  border-top: 5px solid #f4cd00;
+  padding-top: 50px;
+}
+.inners {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.inner .head {
+  margin-bottom: 44px;
+  overflow: hidden;
+}
+.logo img {
+  float: left;
+  width: 127px;
+  height: 50px;
+}
+.etc {
+  float: right;
+  padding-top: 10px;
+}
+.etc a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #fff;
+  line-height: 14px;
+  text-decoration: none;
+}
+.etc a + a {
+  margin-left: 26px;
+  padding-left: 27px;
+  border-left: 1px solid #bdbdbd;
+}
+.btn-board-list {
+  display: inline-block;
+  vertical-align: middle;
+  border: 2px solid #f4cd00;
+  height: 42px;
+  line-height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #000;
+  padding: 0 18px;
+  text-decoration: none;
+}
+
+/* ///헤더프타끝 푸터// */
+
+.body {
+  clear: both;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #909090;
+  padding-top: 30px;
+}

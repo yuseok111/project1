@@ -1,0 +1,173 @@
+.info1 {
+  position: relative;
+}
+.info1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #f7f9fc;
+  border-bottom: 1px solid #e4e9f2;
+}
+.inner_sub {
+  padding-left: 285px;
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.info-box {
+  padding-top: 50px;
+  position: relative;
+  padding-bottom: 80px;
+  padding-left: 250px;
+}
+
+.btns_pc {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.btns_pc a {
+  display: block;
+  width: 220px;
+  border-radius: 0;
+  text-decoration: none;
+  margin-bottom: 14px;
+}
+.btn_a {
+  height: 48px;
+  line-height: 46px;
+  text-align: center;
+  background: #f4cd00;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+.btn_a img {
+  vertical-align: middle;
+  margin: -4px 0 0 5px;
+}
+.btn_b {
+  color: #000;
+  height: 48px;
+  line-height: 46px;
+  text-align: center;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid;
+}
+.poster {
+  display: none;
+}
+
+.h3 {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 10px 230px 5px 0;
+  line-height: 1.1;
+}
+
+.h4 {
+  font-size: 16px;
+  color: #718096;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.name {
+  font-size: 12px;
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+.name span + span:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 2px;
+  height: 2px;
+  background: #b7c2d8;
+  margin: -3px 5px 0 4px;
+}
+
+.grade {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  line-height: 38px;
+  background: #f4cd00;
+  border: 1px solid #e4e9f2;
+  padding: 0 20px;
+  border-radius: 40px;
+  font-size: 14px;
+  color: #000;
+}
+
+#sticky {
+  height: 318px;
+  width: 222px;
+  position: fixed;
+  z-index: inherit;
+}
+.sub_img img {
+  width: 100%;
+}
+.float-info {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  z-index: 40;
+}
+
+/* /서브두번째 섹션 */
+.info2 {
+  padding: 35px 0;
+}
+.inner_sub_to {
+  padding-left: 285px;
+  position: relative;
+}
+.col2 {
+  overflow: hidden;
+  display: flex;
+}
+
+.col_ss {
+  display: block;
+  margin-left: 390px;
+  width: 25%;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+}
+.cols {
+  display: block;
+  margin-left: 420px;
+  margin-top: -275px;
+  width: 74%;
+}
+
+.tit {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+}
+.txt {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #606060;
+}
+.txt dl dt {
+  float: left;
+  width: 50px;
+  color: #f4cd00;
+}
+dl {
+  padding: 5px;
+}
+dl .dds {
+  width: 230px;
+}

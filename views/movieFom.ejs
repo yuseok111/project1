@@ -1,0 +1,50 @@
+<div class="inners">
+    <div class="tab1 tab2">
+      <a class="actives" href="">일반영화</a>
+      <a href="">독립예술영화</a>
+      <div class="seach_box">
+        <input
+          type="text"
+          class="inp-mv"
+          placeholder="영화명을 입력해주세요"
+        />
+        <button class="btn-srch" type="button">검색</button>
+      </div>
+    </div>
+    <div class="sorting "">
+      <a class="actived" href="">예매순</a>
+      <a href="">가나다순</a>
+    </div>
+
+    <!-- // 이미지 추가되는부분 -->
+    <!-- /클래스명 수정 -->
+    <section class="imglist">
+    <div class="items">
+      <ul>
+        <li>
+      <% for(i=0; i<4; i++){  %>
+      <div class="imgs">
+        <img src="<%= rows[i].img %>">
+        <span class="target">
+          <i class="age15"></i>
+        </span>
+        <span class="rank rank3"></span>
+        </div>
+     
+      <div class="infos">
+        <a class="subjs" href=""><%= rows[i].name %></a>
+        <div class="rates">
+          <span>예매율</span>
+          <strong><%= rows[i].tag %></strong>
+        </div>
+      </div>
+      <div class="movie_infos">
+        <a class="a1" href="">영화정보</a>
+        <a class="a2" href="">예매하기 </a>
+      </div>
+    </li>
+    <% };%>
+    </ul>
+  </div>
+</section>
+    </div>

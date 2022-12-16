@@ -1,0 +1,75 @@
+<div class="inner_notice">
+  <div class="list-tabs">
+    <a class="active" href="">공지사항</a>
+  </div>
+
+  <div class="board-head">
+    <h3 class="no_h3">
+      총
+      <strong>6개</strong>
+      의 게시글이 있습니다.
+    </h3>
+    <div class="srch-box">
+      <div class="select-box">
+        <select class="select" name="" id="srchKey">
+          <option value="TitleNm">제목</option>
+          <option value="ContentsNm">내용</option>
+        </select>
+      </div>
+      <div class="inp-box">
+        <input
+          type="text"
+          id="srchVal"
+          class="inp bg-none"
+          value
+          placeholder="검색어를 입력해주세요"
+        />
+        <button type="button" class="btn-srch"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="table1">
+    <table>
+      <colgroup>
+        <col style="width: 10%" />
+        <col style />
+        <col style="width: 13%" />
+        <col style="width: 13%" />
+        <col style="width: 12%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="text-center">번호</th>
+          <th class="text-center">제목</th>
+          <th class="text-center">구분</th>
+          <th class="text-center">등록일</th>
+          <th class="text-center">조회수</th>
+        </tr>
+      </thead>
+      <% rows.forEach((row,index)=>{ %>
+      <tbody>
+        <tr>
+          <td class="text-center"><%= row.id %></td>
+          <td
+            class="mobile1 text-center"
+            onclick="javascript:location.href='/Notice_sub?id=<%= row.id %>'"
+          >
+            <%= row.title %>
+            <div class="only-m date"><%= row.create_time%></div>
+          </td>
+          <td class="text-center"><%= row.name%></td>
+          <td class="text-center"><%= row.create_time%></td>
+          <td class="text-center">137</td>
+        </tr>
+      </tbody>
+      <% }); %>
+    </table>
+  </div>
+  <div class="pagena">
+    <a class="active" href="">1</a>
+  </div>
+  <div class="mokrok">
+    <a class="btn-board-list" href="Notice_write">작성</a>
+  </div>
+</div>

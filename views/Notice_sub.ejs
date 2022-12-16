@@ -1,0 +1,26 @@
+<div class="sub_mains">
+  <div class="board-view">
+    <div class="headd">
+      <h4 class="h4"><%= row.title %></h4>
+      <h4 class="h4"style="text-align: center; font-size:16px;"><%= row.name%></h4>
+    </div>
+    <div class="hit-common">
+      <span>조회 775 </span>
+      <span><%= row.create_time%></span>
+    </div>
+  </div>
+  <div class="mid">
+    <p><%= row.content%></p>
+    <p style="text-align: center">
+      <strong>
+        <!-- <span style="font-size: 18px"> <%= row.name%> </span> -->
+      </strong>
+    </p>
+  </div>
+
+  <form class="mokrok">
+    <input class="btn-board-list" type="button" id="notice_list_btn" value="목록" onclick="javascript:location.href='/Notice'"></input>
+    <input class="btn-board-list" type="button" id="notice_write_btn" value="글수정" onclick="javascript:location.href='/updateM?id=<%= row.id %>'"></input>
+    <input class="btn-board-list" type="button" id="notice_delete_btn" value="삭제" onclick="javascript:location.href='/deleteM?id=<%= row.id %>'">
+  </form>
+</div>

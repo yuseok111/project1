@@ -1,0 +1,207 @@
+.member {
+  max-width: 490px;
+  padding: 0 20px;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+.list-tabss {
+  margin-bottom: 40px;
+}
+.list-tabss a:hover:before,
+.list-tabss a.active:before {
+  width: 100%;
+  opacity: 1;
+}
+.list-tabss a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -1px;
+  height: 3px;
+  background: #f4cd00;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.list-tabss a {
+  float: left;
+  font-size: 20px;
+  opacity: 0.5;
+  height: 58px;
+  line-height: 55px;
+  position: relative;
+  margin-right: 25px;
+  color: #000;
+}
+.member .list-tabss a {
+  height: 40px;
+  line-height: 38px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.list-tabss a:hover,
+.list-tabss a.active {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.checkbox:checked + em {
+  border-color: #f4cd00;
+}
+.checkbox + em {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.checkbox:checked + em:before {
+  transform: scale(1);
+  opacity: 1;
+}
+.checkbox + em:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(../img/check.png) no-repeat 50% 50%;
+  transform: scale(0.2);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.h3-memberss {
+  font-size: 12px;
+  color: #8f9bb3;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 5px;
+  padding-top: 30px;
+  text-align: left;
+  position: absolute;
+  left: 580px;
+}
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.member .inp-member {
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  color: #000;
+  border: 0;
+  border-bottom: 1px solid #d8dbe1;
+  background: none;
+}
+
+.member .logi {
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.checkbox + em + span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #292929;
+  margin-left: 6px;
+}
+
+.btn-type0 {
+  display: inline-block;
+  width: 100%;
+  height: 48px;
+  line-height: 46px;
+  border-radius: 4px;
+  text-align: center;
+  background: #f4cd00;
+  font-size: 16px;
+  font-weight: bold;
+}
+button {
+  border: 0;
+  outline: none;
+  background: none;
+  text-align: left;
+}
+.member .find {
+  text-align: center;
+  margin: 15px 0 30px;
+}
+
+.member .find a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #909090;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.member .find a + a {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid #909090;
+  text-decoration: none;
+}
+
+.member .orther-login .tit {
+  max-width: 260px;
+  margin: 0 auto;
+  text-align: center;
+}
+.member .orther-login .tit span {
+  position: relative;
+  display: block;
+}
+.member .orther-login .tit span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: #e4e9f2;
+}
+.member .orther-login .tit span strong {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 12px;
+  background: #fff;
+  font-size: 12px;
+  color: #8f9bb3;
+  position: relative;
+  z-index: 2;
+}
+.member .orther-login .sns {
+  text-align: center;
+  padding: 12px 0 30px;
+}
+.member .orther-login .sns a {
+  margin: 0 10px;
+}
+.member .orther-login .desc {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #909090;
+  word-break: keep-all;
+}
+.member .orther-login .desc span {
+  color: #f4cd00;
+}
+.member .orther-login .sns a img {
+  width: 52px;
+}
+
+/* ////푸터시작 */

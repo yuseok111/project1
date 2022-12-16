@@ -1,0 +1,44 @@
+<div class="product_write_wrap">
+  <p>새로운 영화 수정페이지</p>
+  <div class="product_write">
+    <form method="post" action="/upproductw" enctype="multipart/form-data">
+      <div class="product_write_list">
+        <ul>
+          <li>
+            <input type="hidden" name="up_thumpro_id" value="<%= row.id %>" />
+          </li>
+          <li>
+            <label for="thumpro_img">영화이미지</label>
+            <input type="file" name="thumpro_img_re" id="thumpro_img_re" />
+          </li>
+          <li>
+            <label for="thumpro_name">영화명</label>
+            <input type="text" name="thumpro_name_re" id="thumpro_name_re" />
+          </li>
+          <li>
+            <label for="thumpro_tag">예매율</label>
+            <input type="text" name="thumpro_tag_re" id="thumpro_tag_re" />
+          </li>
+        </ul>
+      </div>
+      <div class="product_write_btn">
+        <input type="submit" value="수정" />
+        <div>
+          <input
+            type="button"
+            value="수정"
+            onclick="javascript:location.href='/updatePro?id=<%= rows[i].id %>'"
+          />
+        </div>
+        <!-- 클릭하면 삭제되도록 -->
+        <div>
+          <input
+            type="button"
+            value="삭제"
+            onclick="javascript:location.href='/deletePro?id=<%= rows[i].id %>'"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

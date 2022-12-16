@@ -1,0 +1,89 @@
+.members {
+  max-width: 490px;
+  padding: 0 20px;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+.list-tabss a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: 8px;
+  height: 3px;
+  background: #f4cd00;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.list-tabss a:hover:before,
+.list-tabss a.active:before {
+  width: 100%;
+  opacity: 1;
+}
+.list-tabss a:hover,
+.list-tabss a.active {
+  opacity: 1;
+  font-weight: 600;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.list-tabss a {
+  text-align: center;
+}
+.avb {
+  position: absolute;
+  top: 280px;
+}
+.list-tabss a {
+  height: 58px;
+  position: relative;
+  font-size: 20px;
+  margin-right: 25px;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.members .h3-member {
+  display: block;
+  font-size: 12px;
+  color: #f4cd00;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-top: 25px !important;
+}
+.mb30 {
+  margin-bottom: 150px;
+}
+.members .inp-member {
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  color: #000;
+  border: 0;
+  border-bottom: 1px solid #d8dbe1;
+  background: none;
+  margin-bottom: 30px;
+}
+.checksd {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #d8dbe1;
+  word-break: keep-all;
+}
+.btn_type0 {
+  display: inline-block;
+  width: 100%;
+  height: 48px;
+  line-height: 46px;
+  border-radius: 4px;
+  text-align: center;
+  background: #f4cd00;
+  font-size: 16px;
+  font-weight: 600;
+}

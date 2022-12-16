@@ -1,0 +1,73 @@
+<form class="formss" method="post" action="/updatess">
+  <table
+    class="tables"
+    style="padding-top: 50px"
+    align="center"
+    width="700"
+    border="0"
+    cellpadding="2"
+  >
+    <input type="hidden" name="id" id="id" size="20" value="<%= row.id %>" />
+    <tr class="trs">
+      <td height="20" align="center" bgcolor="#ccc">
+        <font color="white"> 관리자 게시판 수정</font>
+      </td>
+    </tr>
+    <tr class="trs">
+      <td bgcolor="white">
+        <table class="table2">
+          <tr class="trs">
+            <td class="tdd">작성자</td>
+            <td>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                size="20"
+                value="<%= row.name %>"
+              />
+            </td>
+          </tr>
+
+          <tr class="trs">
+            <td class="tdd">제목</td>
+            <td>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                size="60"
+                value="<%= row.title %>"
+              />
+            </td>
+          </tr>
+
+          <tr class="trs">
+            <td class="tdds">내용</td>
+            <td>
+              <textarea name="content" id="content" cols="85" rows="15">
+<%= row.content %>
+</textarea
+              >
+            </td>
+          </tr>
+
+          <tr class="trs">
+            <td class="tdd">비밀번호</td>
+            <td>
+              <input type="password" name="pw" size="10" maxlength="10" />
+            </td>
+          </tr>
+        </table>
+
+        <center>
+          <input
+            type="submit"
+            value="수정하기"
+            onclick="javascript:location.href='/Notice' "
+          />
+        </center>
+      </td>
+    </tr>
+  </table>
+</form>
